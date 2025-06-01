@@ -1,0 +1,14 @@
+services:
+  app:
+    image: space-traveller
+    build:
+      context: ./
+      target: production
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+      - /app/dist
+    ports:
+      - "3000:3000"

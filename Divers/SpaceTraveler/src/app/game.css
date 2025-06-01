@@ -1,0 +1,63 @@
+body {
+    background: black;
+}
+
+.Game {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border: 1px solid #000;
+    overflow: hidden;
+    background: url("/images/starry_sky.jpg") center center repeat;
+    /* Sky Blue */
+    transition: background-color 0.5s ease;
+    animation: animatedBackground 500s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 0;
+    }
+}
+
+.game-over {
+    background-color: #ff6347;
+}
+
+.start-screen {
+    background-color: chartreuse;
+}
+
+.game-over-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.player {
+    position: absolute;
+    user-select: none;
+}
+
+.asteroid {
+    position: absolute;
+}
+
+.score {
+    color: blueviolet;
+    font-size: 5rem;
+}
+
+.flag {
+    color: gold;
+    font-size: 3rem;
+}

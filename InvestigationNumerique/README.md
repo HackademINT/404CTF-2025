@@ -13,6 +13,5 @@
 - 🟩 Forensic et Mat [2/2]
 - 🟩 Apprenti Carver [2/2]
 - 🟧 Tape ton MDP
-- 🟧 Vaut mieux sécuriser que guérir
 - 🟥 Toortik Triflexation [1/2]
 - 🟪 Toortik Triflexation [2/2]

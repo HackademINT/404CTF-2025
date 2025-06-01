@@ -33,3 +33,5 @@ sio.connect('http://URL/')
 sio.wait()
 
 ```
+
+[Solve](SOLVE.md)

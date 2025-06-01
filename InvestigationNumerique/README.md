@@ -9,11 +9,10 @@
 - 🟦 USB51
 - 🟦 Forensic et Mat [1/2]
 - 🟦 Apprenti Carver [1/2]
-- 🟩 Dockerflag
+- 🟩 [Dockerflag](dockerflag/)
 - 🟩 Forensic et Mat [2/2]
 - 🟩 Apprenti Carver [2/2]
 - 🟧 Tape ton MDP
 - 🟧 Vaut mieux sécuriser que guérir
 - 🟥 Toortik Triflexation [1/2]
-- 🟥 [Poids Raw vs. Cours Jette [1/3]](PoidsRawVSCoursJette1)
 - 🟪 Toortik Triflexation [2/2]

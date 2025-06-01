@@ -1,0 +1,14 @@
+stages:
+  - build
+
+build:
+  stage: build
+  image:
+    name: rust:alpine
+  script:
+    - rustup target add wasm32-unknown-unknown
+    - apk add python3 musl-dev
+    - python3 build.py
+  artifacts:
+    paths:
+      - chall.zip

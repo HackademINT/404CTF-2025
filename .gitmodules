@@ -1,0 +1,6 @@
+[submodule "ExploitationDeBinaires/challenges"]
+	path = ExploitationDeBinaires/challenges
+	url = git@github.com:narcisseuuh/challenges-404CTF-2025.git
+[submodule "ExploitationDeBinaires/challenges-narcisse"]
+	path = ExploitationDeBinaires/challenges-narcisse
+	url = git@github.com:narcisseuuh/challenges-404CTF-2025.git

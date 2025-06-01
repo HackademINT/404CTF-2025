@@ -5,4 +5,4 @@ En vous baladant sur le système informatique du vaisseau, vous tombez sur un vi
 Trouvez ce que cache cette image docker
 ***
 Ressources :
-- [dockerflag.tar](dockerflag.tar)
+- [dockerflag.tar](dockerflag.tar.xz)

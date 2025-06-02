@@ -1,0 +1,8 @@
+1: 404CTF{ce_magnifique_model_tiendrait_dans_votre_poche!}
+2: 404CTF{superbe_methode_avancee_de_desapprentisage}  # oui, j'ai vu la faute...
+3: 404CTF{gorfoustral_un_jour_gorfoustral_presque_toujours}
+4: 404CTF{436333370349117}
+    - journal35: 43633
+    - journal34: 33703
+    - journal33: 49117
+    

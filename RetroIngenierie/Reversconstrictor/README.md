@@ -2,6 +2,14 @@
 
 Difficulté : Facile
 
+## Enoncé
+
+Lors de votre voyage intergalactique, vous croisez un serpent géant qui fonce droit sur vous. Heureusement, ce genre de problème avait été anticipé : il vous suffit d’activer votre super blaster intergalactique pour vous sortir de cette mauvaise passe. Mais au moment d’appuyer sur le bouton, une fenêtre s’affiche sur votre tableau de bord… Elle demande un mot de passe pour mettre à jour vos systèmes avant de pouvoir déclencher le laser ! Dépêchez-vous de retrouver ce mot de passe !
+
+## Fichier à disposition
+
+- chall
+
 ## Solution
 
 Flag : 404CTF{D0_y0U_L0v3_Pyth02?1_l0v3_pYt60n!}
@@ -14,7 +22,7 @@ Il existe alors un moyen de le décompiler : [pyinstxtractor](https://github.com
 
 `python3 pyinstctractor.py chall`
 
-On se retouve avec beaucoup de fichiers mais seulement deux nous intéressent :
+On se retouve avec beaucoup de fichiers mais seulement deux nous interessent :
 
 - chall.pyc
 - /modules/encrypt_key.cpython-39.pyc
@@ -35,8 +43,8 @@ Le fichier qui permet de retrouver le mot de passe s'appelle `solve2.py` (Attent
 
 
 Si on veut s'embêter à faire de la crypto, c'est un peu plus compliqué.
-Mais on se retrouve avec 3 points d'une fonction du second degré donc on peut retrouver les racines, et à partir des racines, on peut retrouver le byte original à chaque fois (c'est d'ailleurs le principe du challenge R1R2 en crypto).
-Bref, vous pouvez retrouver une solution avec cette méthode dans le fichier `solve.py` (mais l'autre est beaucoup plus simple).
+Mais on se retrouve avec 3 points d'une fonction du second degré donc on peut retrouver les racines, et à partir des racines, on peut retrouver le byte original à chaque fois.
+Bref, vous pouvez retrouver une solution avec cette méthode dans le fichier `solve.py` (mais l'autre est beaucoup plus simple)
 
 ## Création du challenges
 

@@ -1,0 +1,1 @@
+FLAG = "404CTF{B1p_bOuP_B6M!aU70d35crUt1oN_pR0g6aM_aC7Iv8t3d!321-B0om!}"

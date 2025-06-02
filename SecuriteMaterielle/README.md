@@ -7,9 +7,9 @@
 
 ## Challenges
 - 🟦 Trop d'IQ
-- 🟩 Space Radio
+- 🟩 [Space Radio](space-radio/)
 - 🟩 [R16D4](r16d4/)
-- 🟧 Comment est votre température ?
+- 🟧 [Comment est votre température ?](comment-est-votre-temperature)
 - 🟧 Code Radiospatial n°1
 - 🟧 Unidentified Serial Bus [1/2]
 - 🟥 Unidentified Serial Bus [2/2]

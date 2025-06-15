@@ -1,0 +1,12 @@
+[package]
+name = "http-over-rockets"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+aes = "0.8.4"
+cbc = "0.1.2"
+dotenv = "0.15.0"
+rocket = { version = "0.5.1", features = ["json"] }
+rocket_dyn_templates = { version = "0.2.0", features = ["handlebars"] }
+serde = { version = "1.0.219", features = ["derive"] }

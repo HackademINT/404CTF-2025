@@ -12,4 +12,4 @@
 - 🟩 3x3cut3_m3
 - 🟧 [Inscription](inscription/)
 - 🟧 Etoile binaire
-- 🟥 [RFC 9452 bis: IP over Rockets with Quality of Service](<RFC 9452 bis: IP over Rockets with Quality of Service/>)
+- 🟥 [RFC 9452 bis: IP over Rockets with Quality of Service](<RFC 9452 bis%3a IP over Rockets with Quality of Service/>)

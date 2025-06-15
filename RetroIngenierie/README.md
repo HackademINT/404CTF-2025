@@ -6,10 +6,10 @@
 </div>
 
 ## Challenges
-- 🟦 Cbizarre [1/2]
-- 🟦 Cbizarre [2/2]
-- 🟩 Reversconstrictor
+- 🟦 [Cbizarre \[1/2\]](Cbizarre/)
+- 🟦 [Cbizarre \[2/2\]](Cbizarre/)
+- 🟩 [Reversconstrictor](Reversconstrictor/)
 - 🟩 3x3cut3_m3
-- 🟧 Inscription
+- 🟧 [Inscription](inscription/)
 - 🟧 Etoile binaire
-- 🟥 RFC 9452 bis: IP over Rockets with Quality of Service
+- 🟥 [RFC 9452 bis: IP over Rockets with Quality of Service](<RFC 9452 bis: IP over Rockets with Quality of Service/>)

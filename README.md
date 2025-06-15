@@ -30,7 +30,7 @@ Coorganisé par la [Direction Générale de la Sécurité Extérieure](https://w
 - 🔎 [Investigation numérique](InvestigationNumerique) - *Digital forensics*
 - 🖥  [Réaliste](Realiste) - *Realistic*
 - 🌎 [Renseignement en sources ouvertes](RenseignementEnSourcesOuvertes) - *Open source intelligence* (OSINT)
-- 🔧 [Rétro-Ingénierie](RetroEngenierie) - *Reverse Engineering*
+- 🔧 [Rétro-Ingénierie](RetroIngenierie) - *Reverse Engineering*
 - 📟 [Sécurité materielle](SecuriteMaterielle) - *Hardware*
 - 🌐 [Web](Web)
 

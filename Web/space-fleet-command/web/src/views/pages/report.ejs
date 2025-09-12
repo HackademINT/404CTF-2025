@@ -1,0 +1,22 @@
+<%- include('../partials/header', { title: 'Report an Issue' }) %>
+
+<section class="report-form">
+  <h2>🛑 Report Incorrect Information</h2>
+  <form action="/report" method="POST">
+    <label for="shipId">URL of the incorrect spaceship page</label>
+    <input id="url" name="url" required />
+
+    <label for="issue">What’s wrong?</label>
+    <textarea id="issue" name="issue" rows="5"></textarea>
+
+    <button type="submit">Send Report</button>
+
+    <% if (message) { %>
+      <div class="message">
+        <%- message %>
+      </div>
+    <% } %>
+  </form>
+</section>
+
+<%- include('../partials/footer') %>

@@ -1,0 +1,23 @@
+<%- include('../partials/header', { title: spaceship.name }) %>
+
+  <h1>🚀 <%= spaceship.name %></h1>
+  <p class="tagline">"<%= spaceship.tagline %>"</p>
+
+    <section class="details">
+      <h2>Technical Specs</h2>
+      <ul>
+        <li><strong>Model:</strong> <%= spaceship.model %></li>
+        <li><strong>Manufacturer:</strong> <%= spaceship.manufacturer %></li>
+        <li><strong>Speed:</strong> <%= spaceship.speed %> km/s</li>
+        <li><strong>Armament:</strong> <%= spaceship.armament %></li>
+        <li><strong>Crew Capacity:</strong> <%= spaceship.crew %></li>
+      </ul>
+    </section>
+
+    <!-- Mission Description Section -->
+    <section class="description">
+      <h2>Mission Log</h2>
+      <p><%= spaceship.description %></p>
+    </section>
+
+<%- include('../partials/footer') %>

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "name": "SSV Horizon",
+    "tagline": "To the edge of the void.",
+    "model": "Horizon Mk VII",
+    "manufacturer": "NovaTech Industries",
+    "speed": 9800,
+    "armament": "2x Plasma Cannons, 1x Railgun",
+    "crew": 12,
+    "description": "A reconnaissance vessel built for deep space ops.",
+    "classified": false
+  },
+  {
+    "id": 1,
+    "name": "SSV Tempest",
+    "tagline": "Swift and deadly.",
+    "model": "Tempest Mk II",
+    "manufacturer": "Aegis Dynamics",
+    "speed": 12000,
+    "armament": "4x Laser Cannons, 2x Missile Launchers",
+    "crew": 8,
+    "description": "A fast attack ship designed for hit-and-run tactics.",
+    "classified": false
+  },
+  {
+    "id": 2,
+    "name": "SSV Leviathan",
+    "tagline": "The titan of the stars.",
+    "model": "Leviathan Mk III",
+    "manufacturer": "Titan Aerospace",
+    "speed": 8500,
+    "armament": "6x Plasma Cannons, 1x Torpedo Launcher",
+    "crew": 20,
+    "description": "A heavy cruiser built for long-range engagements.",
+    "classified": false
+  },
+  {
+    "id": 3,
+    "name": "SSV Phantom",
+    "tagline": "Silent and unseen.",
+    "model": "Phantom Mk I",
+    "manufacturer": "StealthTech Corp",
+    "speed": 11000,
+    "armament": "2x Railguns, 1x EMP Emitter",
+    "crew": 6,
+    "description": "A stealth ship designed for covert operations.",
+    "classified": true
+  }
+]

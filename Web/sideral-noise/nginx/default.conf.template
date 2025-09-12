@@ -1,0 +1,41 @@
+proxy_cache_path /var/cache/nginx/my_cache levels=1:2 keys_zone=my_cache:10m max_size=1g inactive=60m use_temp_path=off;
+
+server {
+    listen 80;
+    server_name _;
+
+    location ~ "^/satellite/noise/[A-Za-z0-9_-]{21}$" {
+        proxy_cache my_cache;
+        proxy_cache_key $scheme$proxy_host$uri;
+        # cache noise for 5 minutes for traceability
+        proxy_cache_valid 200 5m;
+
+        proxy_pass http://${SATELLITE_HOST}:${SATELLITE_PORT};
+
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+        proxy_http_version 1.1;
+    }
+
+    location /satellite/ {
+        proxy_pass http://${SATELLITE_HOST}:${SATELLITE_PORT};
+
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+        proxy_http_version 1.1;
+    }
+
+    location / {
+        proxy_pass http://${FRONTEND_HOST}:${FRONTEND_PORT};
+
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+        proxy_http_version 1.1;
+    }
+}

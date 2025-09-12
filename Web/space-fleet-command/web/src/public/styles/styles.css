@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'Orbitron';
+  src: url('/fonts/Orbitron-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('/fonts/Orbitron-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+  background-size: cover;
+  color: #e0e0e0;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 🛰 NAVBAR STYLING */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(20, 20, 40, 0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.1);
+  z-index: 1000;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #38bdf8;
+  display: flex;
+  align-items: center;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #7dd3fc;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+
+header h1::before {
+  margin-right: 12px;
+  height: 24px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fbbf24;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 15px;
+  background: rgba(255, 191, 36, 0.2);
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255, 191, 36, 0.5);
+}
+
+/* ⛴ CONTENT STYLING */
+main {
+  width: 90%;
+  max-width: 800px;
+  background-color: rgba(20, 20, 40, 0.85);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.05);
+  margin-top: 100px; /* Make space for fixed navbar */
+}
+
+/* Headings */
+h2 {
+  color: #fbbf24;
+  margin-top: 1.5rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.25rem;
+}
+
+.message {
+  background: rgba(30, 30, 60, 0.6);
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #333;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+/* Ship list and cards */
+.ship-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ship {
+  background: rgba(30, 30, 60, 0.6);
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #333;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.ship:hover {
+  background: rgba(60, 60, 90, 0.7);
+}
+
+.ship h3 {
+  color: #38bdf8;
+  margin: 0 0 0.5rem;
+}
+
+.ship a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.ship a:hover {
+  text-decoration: underline;
+}
+
+/* Ship detail view */
+.ship-details p {
+  margin: 0.5rem 0;
+  color: #ccc;
+}
+
+/* Report form */
+.report-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-form {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #111;
+  color: #e0e0e0;
+  font-family: 'Orbitron', sans-serif;
+}
+
+button {
+  background-color: #38bdf8;
+  color: black;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0ea5e9;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}

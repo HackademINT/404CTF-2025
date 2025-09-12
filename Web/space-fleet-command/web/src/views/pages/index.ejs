@@ -1,0 +1,27 @@
+<%- include('../partials/header', { title: "Galactic Fleet Directory" }) %>
+
+  <h1>Galactic Fleet Directory</h1>
+    <p class="tagline">Explore the known ships of the fleet</p>
+
+  <!-- 🔍 Search Bar -->
+  <form action="/" method="GET" class="search-form">
+    <input type="text" name="q" placeholder="Search for a spaceship..." value="<%= query %>" />
+    <button type="submit">Search</button>
+  </form>
+
+    <% if (spaceships.length === 0) { %>
+      <p>No spaceships match your query.</p>
+    <% } else { %>
+      <div class="ship-list">
+        <ul>
+          <% spaceships.forEach(ship => { %>
+            <li class="ship">
+              <h3><a href="/spaceship/<%= ship.id %>"><%= ship.name %></a></h3>
+              <p><em><%= ship.tagline %></em></p>
+            </li>
+          <% }) %>
+        </ul>
+      </div>
+    <% } %>
+
+<%- include('../partials/footer') %>

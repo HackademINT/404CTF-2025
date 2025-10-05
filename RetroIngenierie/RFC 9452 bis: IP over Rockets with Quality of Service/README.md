@@ -46,7 +46,7 @@ Bien essayé, mais ça va pas être aussi simple que ça...
 On n'y est pas encore...
 
 On peut donc commencer à regarder un peu ce qu'il se passe réellement dans la fonction décompilée.
-- Le premier if/else opère sur notre paramètre `Optional<bool> fake`, et avec un peu de dynamique et/ou d'intuition/d'espérience avec le reverse rust, on déduira qu'il faut que ce paramètre soit à false pour qu'on rentre, dans la suite du code, dans la branche qui s'occupe du cookie.
+- Le premier if/else opère sur notre paramètre `Optional<bool> fake`, et avec un peu de dynamique et/ou d'intuition/d'expérience avec le reverse rust, on déduira qu'il faut que ce paramètre soit à false pour qu'on rentre, dans la suite du code, dans la branche qui s'occupe du cookie.
 - Par lecture rapide dans ghidra, on verra que le nom du cookie attendu est `mucho secret`, et, en regardant les éléments de la comparaison opérée par `::core::cmp::impls::eq<str,_str>()`, que la valeur attendue est `cm9ja2V0ID0gdnJvb20gdnJvb20gPSBmYXN0ID0gZ29vZCBmb3IgaW50ZXJuZXQ=`
 
 On peut donc rajouter ce cookie dans notre navigateur pour cette page, à l'aide de l'outil d'inspection, on rafraîchit, et on tombe sur la page suivante:

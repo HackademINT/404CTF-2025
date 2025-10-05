@@ -26,7 +26,7 @@ On peut donc entamer un début d'analyse statique. Un lancement d'analyse dans G
 
 #### Basiques de rétro-ingénierie Rust
 - Comme pour tout binaire rust, on trouvera alors dans la section "namespace" du "symbol tree" de ghidra un namespace correspondant au nom du binaire (qui s'il n'a pas été modifié, est le nom du projet), contenant également une fonction `main`.
-- Un des premiers calls y étant fait étant pour une fontion du namespace `rocket` et on retrouve également ce nom abondamment dans les noms de fonction sous ce namespace. Après une courte recherche sur les interwebs on tient le framework utilisé pour ce challenge: `rocket.rs`.
+- Un des premiers calls y étant fait étant pour une fonction du namespace `rocket` et on retrouve également ce nom abondamment dans les noms de fonction sous ce namespace. Après une courte recherche sur les interwebs on tient le framework utilisé pour ce challenge: `rocket.rs`.
 
 #### Identification des routes 
 - Toujours dans ce namespace, on trouvera un module `pages`, qui semble contenir la majorité des routes du serveur (dont celle d'accueil `index`, qui ne fait que faire le rendu de la template du même nom, trouvable dans le dossier templates)
@@ -34,7 +34,7 @@ On peut donc entamer un début d'analyse statique. Un lancement d'analyse dans G
 
 #### La fonction `http_over_rockets::pages::flag()`
 Dans ce module `http_over_rockets::pages`, on trouvera une route au nom fort intéressant: `flag`.  
-Comme le binaire a été gentiment compilé en mode débug, ghidra réussit à extraire les infos Dwarf correspondant à la signature de la fontion:
+Comme le binaire a été gentiment compilé en mode débug, ghidra réussit à extraire les infos Dwarf correspondant à la signature de la fonction:
 ![ghidra is love, ghidra is life, l'image est détaillée dans le paragraphe d'après](./images_writeup/signature_page_flag.png)
 Après une courte lecture de la documentation de rocket.rs, on peut donc en déduire que la fonction, et par extension la route, prend en paramètre un booléen optionnel `fake`, ainsi qu'une `CookieJar` (stockant les cookies) et renvoie un rendu de template ou du html brut.
 
@@ -58,7 +58,7 @@ On a alors épuisé tout le code décompilé de la fonction `flag`, on peut en d
 ####  La fonction `http_over_rockets::pages::test()`
 On peut la trouver de différentes manières. Une des plus propres à mes yeux est d'utiliser `rust-gdb` (normalement fourni par rustup et/ou rust) et de mettre des breakpoints sur les 2 autres fonctions pas encore utilisées de `http_over_rockets::pages` puis d'appuyer sur le bouton "montrer". On est alors en pause dans `http_over_rockets::pages::test()`. Trouvé !
 
-Toujours avec le prototype dwarf, on constatera que la fontion prend en entrée un `Referer`, structure non définie par rocket.rs, mais qui devrait faire référence au header du même nom si le concepteur du chall est gentil (il l'est \:) ), ainsi qu'un `Form<Vec<bool>>` (en enlevant le gras).
+Toujours avec le prototype dwarf, on constatera que la fonction prend en entrée un `Referer`, structure non définie par rocket.rs, mais qui devrait faire référence au header du même nom si le concepteur du chall est gentil (il l'est \:) ), ainsi qu'un `Form<Vec<bool>>` (en enlevant le gras).
 
 > petite précision, le header referer correspond à l'url depuis laquelle est accédée la page actuelle.
 
